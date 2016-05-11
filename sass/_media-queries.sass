@@ -1,0 +1,105 @@
+/******************************************/
+/*=========     MEDIA-QUERIES    =========*/
+/******************************************/
+@media (min-width: 768px)
+	// version SM
+	.navbar-nav
+		> li
+			> a
+				color: $main-color !important
+				margin: -25px 0 0
+				font-size: 14px
+				background-color: #fff !important
+				&:hover,
+				&:active,
+				&:focus
+					color: $third-color !important
+					background-color: #fff !important
+		> .active
+			> a
+				color: #fed136
+				background-color: transparent !important	
+	.logo
+		width: 85%
+	#banner
+		.text-center
+			text-align: left !important	
+	footer
+		.texto-final	
+			position: relative
+			.boton
+				float: right
+		
+	#contacto
+		.buscador
+			
+			width: 100%
+
+	.combos
+		> *
+			order: 999
+
+	
+	#tit01
+		order: 1 
+		+ #img01
+			order: 2
+
+	#tit02
+		order: 4 
+		+ #img02
+			order: 3
+	#tit03
+		order: 5 
+		+ #img03
+			order: 6
+
+	#tit04
+		order: 8 
+		+ #img03
+			order: 7
+	#services
+		padding: 75px 0
+
+	
+@media (min-width: 992px)
+	// version MD.navbar-nav
+	
+	.navbar-nav
+		> li
+			> a
+				margin: 30px 15px
+	.logo 
+		width: 100%
+	.team-member
+				
+		.datos
+			width: 50%
+			margin: 0 140px
+	.combos
+		> *
+			order: 0
+	#tit01
+		order: 1 
+		+ #img01
+			order: 2
+
+	#tit02
+		order: 3
+		+ #img02
+			order: 4
+	#tit03
+		order: 5 
+		+ #img03
+			order: 6
+
+	#tit04
+		order: 7
+		+ #img03
+			order: 8
+	#tit05
+		order: 9
+
+
+
+	

@@ -1,0 +1,392 @@
+/*************************************/
+/*=========     GLOBAL     =========*/
+/***********************************/
+%contenedores
+	padding: 100px 0
+
+.text-muted
+	color: #fff
+	margin-bottom: 40px
+
+.section-title
+	font: 700 40px $third-font
+	margin: 0
+	color: #FFF
+	text-transform: uppercase
+	+ p
+		font: 400 italic $fourth-font
+		margin: 10px 0 75px
+	&.white
+		color: #fff
+		+ p
+			color: #fff
+.separator
+	margin: 10px auto
+	height: 3px
+	width: 45px
+	background: $main-color
+
+/*************************************/
+/*=========     HEADER     =========*/
+/***********************************/
+.navbar-default
+	background-color: #fff
+	border: none
+	height: 100px
+	border-bottom: 10px solid #ea212b
+
+
+	.navbar-brand
+		color: $main-color
+		font-family: $main-font
+		&:hover,
+		&:active,
+		&:focus
+			color: $main-color !important
+
+	.navbar-toggle
+		border: none
+		background-color: $main-color
+		color: #fff
+		font-size: 18px
+		margin: 25px
+		&:hover,
+		&:active,
+		&:focus
+			background-color: $main-color !important
+
+	.navbar-nav
+		> li
+			> a
+				font-family: $third-font
+				color: #fff
+				text-transform: uppercase
+				border-bottom: 1px dotted #fff
+				background-color: $third-color
+				&:hover,
+				&:active,
+				&:focus
+					color: $main-color 
+					background-color: #f7e073
+		> .active
+			> a
+				color: #fed136
+				background-color: transparent !important
+.logo
+	margin-top: -15px
+#nav-links
+	border-color: #ea212b
+
+
+
+/*************************************/
+/*=========     BANNER     =========*/
+/***********************************/
+
+#banner
+	background: url(../images/burger.jpg) center center/cover
+	background-repeat: no-repeat
+.intro-text
+	padding: 200px 0 70px
+	color: #fff
+
+	h2
+		font: 400 italic 36px/36px $fourth-font
+		margin-bottom: 25px
+	
+	h1
+		font: 700 50px/50px $third-font
+		text-transform: uppercase
+		margin-bottom: 25px
+
+	a
+		background-color: $main-color
+		color: #fff
+		text-transform: uppercase
+		font: 400 18px $third-font
+		padding: 20px 40px
+		+b-ra(5px)
+		&:hover
+			color: #fff
+	
+
+
+/*************************************/
+/*=========     SERVICES    =========*/
+/***********************************/
+#services
+	@extend %contenedores
+	padding: 75px
+	background-color: $third-color
+	text-align: center
+	.glyphicon
+		width: 115px
+		height: 115px
+		background-color: $main-color
+		+b-ra(50%)
+		line-height: 105px
+		color: #fff !important
+		font-size: 55px !important
+		&:hover
+			color: $third-color !important
+			background-color: rgba(255,255,255,0.8)
+
+.item-subtitle
+	font-family: $third-font
+	font-size: 20px
+	+ p
+		line-height: 25px
+		margin-bottom: 30px
+
+
+
+/*************************************/
+/*=========    PORTFOLIO    =========*/
+/***********************************/
+
+	
+.contenedor1
+	background: url(../images/fondo-promo2.jpg) right center/cover no-repeat
+	padding: 40px 0 20px
+	min-height: 300px
+	text-align: center
+	font: 700 40px 
+	margin: 0
+	color: #FFF
+	.combos
+		display: flex
+		flex-wrap: wrap
+		justify-content: space-between
+		padding-top: 20px
+		
+
+		div
+			text-align: center
+			font-size: 30px
+			padding-top: 0
+			margin: auto
+			margin-top: 5px
+
+		.titulo1
+			color: #eac50b
+			width: 40%
+			font-size: 40px
+			line-height: 40px
+			margin-bottom: 20px
+			padding-top: 40px
+			font-family: $quinta-font
+
+		.titulo2
+			width: 40%
+			font-size: 40px
+			line-height: 40px
+			padding-top: 40px
+			margin-bottom: 20px
+			font-family: $quinta-font
+		.titulo3
+			color: #fff
+			width: 40%
+			font-size: 40px
+			line-height: 40px
+			padding-top: 40px
+			margin-bottom: 20px
+			font-family: $quinta-font
+		.titulo4
+			color: #e6af11
+			width: 40%
+			font-size: 40px
+			line-height: 40px
+			padding-top: 40px
+			margin-bottom: 20px
+			font-family: $quinta-font		
+		
+		.imagenes
+			border: solid 4px #fff
+			overflow: hidden
+			+b-ra(10px)
+			&:hover
+				+b-sh(2px, 4px, 12px, black)
+
+
+
+.modal-content
+	min-height: 100vh //100% view-port
+	min-width: 100vh
+	background-color: #fff
+	border-radius: 0
+.modal-title
+	background: $main-color
+	margin: 20px
+	font-size: 35px
+	padding: 10px
+	+b-ra(10px)
+.mi-clase
+	margin: 20px
+	float: left
+	
+.btn-close
+	background-color: $main-color
+	color: #fff
+.text-modal
+	color: #777
+.text-modal2
+	background: $third-color
+	font-size: 10px
+	font-family: $third-font
+	padding: 10px
+	+b-ra(10px)
+.modal-price
+	font-size: 100px
+	font-family: $third-font
+	color: $main-color
+	margin: 0
+	padding-top: 20px
+	line-height: 70px
+	font-weight: 700
+	i
+		font-style: normal
+
+	sup    
+		display: inline-block
+		vertical-align: top
+		font-size: 24px
+		position: relative
+		top: 35px
+
+/*************************************/
+/*=========     WORK TEAM    =========*/
+/***********************************/
+
+#team
+	@extend %contenedores
+	background-color: #313031
+	padding-top: 10px
+	padding-bottom: 5px
+.team-member
+	margin-bottom: 30px
+	margin-top: 0
+	.item-subtitle
+		margin-bottom: 0
+		+ p
+			line-height: 20px
+			margin-bottom: 10px
+			padding: 0 0 5px
+			b 
+				color: #313031
+				
+	.datos
+		background: $third-color
+		+b-ra(10px)
+		h3
+			color: #fff
+			padding: 5px
+
+
+
+.team-img
+	width: 230px
+	margin: auto
+	border: solid 8px #fff
+	overflow: hidden
+	+b-ra(50%)
+
+.txt-large
+	font-size: 17px
+	line-height: 27px
+
+
+/*************************************/
+/*=========     ABOUT US    =========*/
+/***********************************/
+
+#about
+	background: url(../images/burger2.jpg) right center/cover no-repeat
+	padding: 30px 0 70px
+	min-height: 300px
+	p 
+		font-size: 14px
+		padding-top: 20px
+.about-icons
+	span
+		display: inline-block
+		width: 60px
+		height: 60px
+		background-color: $main-color
+		+b-ra(50%)
+		line-height: 60px
+		color: #fff
+		font-size: 26px
+		margin-top: 20px
+		margin-right: 20px
+		text-align: center
+		&:hover,
+		&:active,
+		&:focus
+			background-color: $third-color
+
+/*************************************/
+/*=========    CONTACT US    =========*/
+/***********************************/
+#contacto
+	background: url(../images/mapa.jpg) right center/cover no-repeat
+	
+	min-height: 300px
+	font-family: $quinta-font
+	margin-bottom: 0
+	.buscador
+		width: 75%
+		margin: 50px auto
+		background: rgba(255,255,255,0.8)
+		padding-bottom: 20px
+		
+			
+		.buscador1
+			position: relative
+			background: $main-color
+			margin: 20px
+			height: 50px
+			
+			button
+				position: absolute
+				right: 0
+				top: 0
+				height: 50px
+				width: 25%
+				border: solid 2px $third-color
+				background: $main-color
+				font-size: 30px
+					
+				color: #fff
+			input
+				padding-left: 8px
+				height: 50px
+				width: 100%
+				border: solid 2px $third-color
+	
+/*************************************/
+/*=========     FOOTER     =========*/
+/***********************************/
+footer
+	border-top: 2px solid #464646 !important
+	background: #fff
+	color: #fff
+	margin-top: 0
+	padding-left: 10px
+	border: solid 1px #fff
+	p 
+		margin-top: 20px
+		font-size: 12px
+		color: #0a0a0a
+.footer-icons
+	span
+		display: inline-block
+		width: 40px
+		height: 40px
+		background-color: #464646
+		line-height: 40px
+		text-align: center
+		font-size: 18px
+		&:hover,
+		&:active,
+		&:focus
+			background-color: $main-color
